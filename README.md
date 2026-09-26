@@ -24,6 +24,7 @@ The project will examine both single-node and multi-node configurations.
 - Memory capacity and bandwidth
 - Power consumption
 - Thermal behavior
+- Deployment cost
 - Cost efficiency
 - Scaling efficiency
 
@@ -53,26 +54,76 @@ CPU, memory, GPU, and storage configurations may differ between systems.
 
 ## Reproducibility
 
-Hardware configurations, software versions, benchmark procedures,
-scripts, raw measurements, and processed results will be documented
-where possible to make experiments reproducible.
+To improve experimental reproducibility, the following will be documented
+and published where possible:
 
-## Project Status
+- Hardware configurations
+- Software and version information
+- OS and kernel versions
+- Configuration files
+- Benchmark procedures
+- Experimental scripts
+- Sanitized raw measurement data
+- Processed data
+- Graphs and figures
+- Experimental issues and failed attempts
 
-**Work in progress**
+## Current Progress
 
-The hardware platform and experimental methodology are currently
-being developed. Results may change as the test environment evolves.
+### MP61-N01
+
+Baseline measurements and long-duration qualification testing have been
+completed on the first experimental node, `MP61-N01`, in its as-acquired
+hardware configuration.
+
+| Component | Configuration |
+| --------- | ------------------------------------- |
+| Model     | Apple Mac Pro (Late 2013 / MacPro6,1) |
+| CPU       | Intel Xeon E5-1620 v2 (4C/8T) |
+| Memory    | 12 GB DDR3-1866 ECC |
+| GPU       | AMD FirePro D300 2 GB ×2 |
+| Storage   | Apple 256 GB SSD |
+| OS        | Debian 13 |
+| Kernel    | Linux 6.12.107+deb13-amd64 |
+
+### Qualification
+
+On 2026-09-27, the following sequence of extended stress tests was completed.
+
+| Test | Duration | Result |
+| ------------------ | -------: | ------ |
+| Memory stress | 3 h | PASS |
+| Dual GPU stress | 2 h | PASS |
+| CPU mixed workload | 1 h | PASS |
+
+Across the complete qualification sequence:
+
+- EDAC Correctable Errors: 0
+- EDAC Uncorrectable Errors: 0
+- Kernel / hardware error log matches: 0
+- Thermal safety stops: None
+- Final result: PASS
+
+Details:
+
+- [MP61-N01 hardware](docs/hardware/MP61-N01.md)
+- [Qualification results](results/MP61-N01/S0-as-acquired/qualification-20260927.md)
+- [Thermal qualification methodology](docs/methodology/thermal-qualification.md)
+- [Fan control](docs/methodology/fan-control.md)
 
 ## Planned Repository Structure
 
+The project repository is planned to use the following structure:
+
 ```text
-hardware/       Hardware inventory and node specifications
-benchmarks/     Benchmark definitions and scripts
-data/           Experimental measurements
-results/        Processed benchmark results
-network/        Network and Thunderbolt topology documentation
-scripts/        Installation and automation scripts
-docs/           Additional documentation
-figures/        Diagrams and figures
-paper/          Research paper material
+docs/
+├── hardware/       Hardware inventory and individual node specifications
+├── methodology/    Experimental methods and measurement procedures
+└── network/        Network and Thunderbolt topology documentation
+
+benchmarks/          Benchmark definitions
+data/                Experimental measurement data
+results/             Processed benchmark and qualification results
+scripts/             Installation, measurement, and automation scripts
+figures/             Diagrams, graphs, and figures
+paper/               Research papers and technical report material
