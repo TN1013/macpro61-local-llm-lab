@@ -3,6 +3,8 @@ Reproducible experiments on local and distributed LLM inference using repurposed
 
 # MacPro6,1 Local LLM Lab
 
+[日本語 README](README.ja.md)
+
 A reproducible experimental project investigating the feasibility of
 repurposing Apple Mac Pro (Late 2013 / MacPro6,1) systems for local
 and distributed large language model (LLM) inference.
