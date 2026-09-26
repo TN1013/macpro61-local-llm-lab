@@ -32,7 +32,7 @@ LLM推論基盤として再利用した場合について、以下を検証し�
 
 - 1ノード：基準性能測定
 - 2ノード：初期分散実験
-- 4ノード：クラスター実験
+- 4ノード：クラスタ実験
 - 最大7ノード：分散LLM実験
 
 ## ハードウェア
@@ -56,33 +56,71 @@ LLM推論基盤として再利用した場合について、以下を検証し�
 
 - ハードウェア構成
 - ソフトウェアおよびバージョン
-- OS・Kernel
+- OS・カーネル
 - 設定ファイル
 - ベンチマーク手順
 - 実験用スクリプト
-- 生の測定データ
+- 公開可能な生の測定データ
 - 処理済みデータ
 - グラフ・図表
 - 実験時の問題および失敗例
 
-## 現在の状態
+## 現在の進捗
 
-**実験準備中 / Work in progress**
+### MP61-N01
 
-ハードウェア構成および実験方法を現在構築しています。
-実験環境の変更に伴い、結果や方法についても変更される可能性があります。
+最初の実験ノード `MP61-N01` について、購入時構成での
+ベースライン測定および長時間Qualificationを完了しました。
+
+| Component | Configuration |
+| --------- | ------------------------------------- |
+| Model     | Apple Mac Pro (Late 2013 / MacPro6,1) |
+| CPU       | Intel Xeon E5-1620 v2 (4C/8T) |
+| Memory    | 12 GB DDR3-1866 ECC |
+| GPU       | AMD FirePro D300 2 GB ×2 |
+| Storage   | Apple 256 GB SSD |
+| OS        | Debian 13 |
+| Kernel    | Linux 6.12.107+deb13-amd64 |
+
+### Qualification
+
+2026-09-27 に以下の連続試験を実施しました。
+
+| Test | Duration | Result |
+| ------------------ | -------: | ------ |
+| Memory stress | 3 h | PASS |
+| Dual GPU stress | 2 h | PASS |
+| CPU mixed workload | 1 h | PASS |
+
+全試験を通して、
+
+- EDAC Correctable Errors: 0
+- EDAC Uncorrectable Errors: 0
+- Kernel / hardware error log matches: 0
+- Thermal safety stop: なし
+- Final result: PASS
+
+詳細:
+
+- [MP61-N01 ハードウェア構成](docs/hardware/MP61-N01.md)
+- [Qualification結果](results/MP61-N01/S0-as-acquired/qualification-20260927.md)
+- [Thermal Qualificationの試験方法](docs/methodology/thermal-qualification.md)
+- [ファン制御](docs/methodology/fan-control.md)
 
 ## リポジトリ構成（予定）
 
 本プロジェクトでは、実験データやドキュメントを以下の構成で
 整理していく予定です。
+
 ```text
-hardware/       ハードウェア台帳および各ノードの仕様
-benchmarks/     ベンチマーク定義およびスクリプト
-data/           実験測定データ
-results/        処理済みベンチマーク結果
-network/        ネットワークおよびThunderbolt構成資料
-scripts/        インストール・自動化スクリプト
-docs/           追加ドキュメント
-figures/        構成図・グラフ・図表
-paper/          研究論文・研究報告用資料
+docs/
+├── hardware/       ハードウェア台帳および各ノードの仕様
+├── methodology/    実験方法および測定手順
+└── network/        ネットワークおよびThunderbolt構成資料
+
+benchmarks/          ベンチマーク定義
+data/                実験測定データ
+results/             処理済みベンチマーク・Qualification結果
+scripts/             インストール・測定・自動化スクリプト
+figures/             構成図・グラフ・図表
+paper/               研究論文・研究報告用資料
