@@ -83,6 +83,17 @@ controller was stopped and the SMC fan control state was verified
 to have returned to automatic mode.
 
 ```text
-manual=0
-output=790
-input=789 RPM
+FINAL_MANUAL=0
+FINAL_OUTPUT=790
+FINAL_INPUT=1330
+```
+
+## Public Dataset
+
+The sanitized experimental dataset for this qualification run is available here:
+
+[MP61-N01 S0 Overnight Qualification Data](../../../data/MP61-N01/S0-as-acquired/20260927-overnight-qual/)
+
+Machine-readable final result:
+
+[RESULT.txt](../../../data/MP61-N01/S0-as-acquired/20260927-overnight-qual/RESULT.txt)

@@ -82,6 +82,17 @@ Qualification終了後、カスタムファン制御を終了し、
 SMC制御が自動モードへ復帰していることを確認しました。
 
 ```text
-manual=0
-output=790
-input=789 RPM
+FINAL_MANUAL=0
+FINAL_OUTPUT=790
+FINAL_INPUT=1330
+```
+
+## 公開データセット
+
+このQualificationで取得した匿名化済み実測データは以下で公開しています。
+
+[MP61-N01 S0 Overnight Qualification Data](../../../data/MP61-N01/S0-as-acquired/20260927-overnight-qual/)
+
+機械可読な最終結果は以下で確認できます。
+
+[RESULT.txt](../../../data/MP61-N01/S0-as-acquired/20260927-overnight-qual/RESULT.txt)
