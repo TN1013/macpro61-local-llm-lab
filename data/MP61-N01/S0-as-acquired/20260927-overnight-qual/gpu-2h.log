@@ -1,0 +1,48 @@
+============================================================
+ Mac Pro 6,1 Dual-D300 2-GPU Soak Test
+============================================================
+START : 2026-09-27T04:35:25+09:00
+HOST  : MP61-N01
+OUT   : /home/USER/gpu-soak/20260927-043525
+LIMIT : 90 C
+
+[1/6] Initial sensors
+[2/6] Pre-test clpeak GPU0
+[2/6] Pre-test clpeak GPU1
+Pre-test result: GPU0=0 GPU1=0
+[3/6] Starting radeontop loggers
+[4/6] Starting simultaneous GPU0 + GPU1 load
+Dumping to /home/USER/gpu-soak/20260927-043525/radeontop-bus06.log, until termination.
+Dumping to /home/USER/gpu-soak/20260927-043525/radeontop-bus02.log, until termination.
+GPU workers finished: GPU0=0 GPU1=0
+Cooling for 60 seconds...
+[5/6] Post-test clpeak GPU0
+[5/6] Post-test clpeak GPU1
+[6/6] Collecting GPU/DRM kernel messages
+============================================================
+ Mac Pro Dual-D300 Soak Test Finished
+============================================================
+END              : 2026-09-27T06:35:34+09:00
+GPU0 worker RC   : 0
+GPU1 worker RC   : 0
+GPU0 post RC     : 0
+GPU1 post RC     : 0
+THERMAL STOP     : NO
+
+Highest recorded temperatures:
+2026-09-27T05:16:58+09:00 max_temp=68.0C
+2026-09-27T05:12:16+09:00 max_temp=68.0C
+2026-09-27T04:51:43+09:00 max_temp=68.0C
+2026-09-27T04:50:02+09:00 max_temp=68.0C
+2026-09-27T04:37:25+09:00 max_temp=67.8C
+2026-09-27T04:37:55+09:00 max_temp=67.5C
+2026-09-27T04:37:45+09:00 max_temp=67.5C
+2026-09-27T04:37:35+09:00 max_temp=67.5C
+2026-09-27T04:38:05+09:00 max_temp=67.2C
+2026-09-27T06:20:16+09:00 max_temp=67.0C
+
+Output directory:
+/home/USER/gpu-soak/20260927-043525
+
+DONE
+/home/USER/gpu-soak/20260927-043525

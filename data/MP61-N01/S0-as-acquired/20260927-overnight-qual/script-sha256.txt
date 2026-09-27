@@ -1,0 +1,2 @@
+e61f6f447c7e86cf9c8386c8aad28f3519c545a382b2c5a7766b402fe3b465c6  /home/USER/macpro-fand-v0.2.py
+3ec0ef96bdcf139eff9f27344705c5af6a56f3808b6c0090fea8f5180d8b3f41  /home/USER/gpu-soak-2h.sh
