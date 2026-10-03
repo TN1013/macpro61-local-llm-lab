@@ -107,6 +107,39 @@ LLM推論基盤として再利用した場合について、以下を検証し�
 - [Thermal Qualificationの試験方法](docs/methodology/thermal-qualification.md)
 - [ファン制御](docs/methodology/fan-control.md)
 
+### Kernel依存のVulkan op-offload性能差
+
+AMD GFX6 GPUを搭載するMacPro6,1において、llama.cppのVulkan
+operation-offload pp512経路にkernel version依存の大きく再現可能な
+性能差を確認した。
+
+2026-10-03に完走したA/B試験の最終データセットは576測定である。
+
+| GPU | Linux 6.12.107 | Linux 6.12.111 | 107 / 111 |
+|---|---:|---:|---:|
+| FirePro D300 / Pitcairn、Lab1-3集約 | 63.031 tok/s | 16.448 tok/s | 3.832x |
+| FirePro D500 / Tahiti、Lab5 | 39.433 tok/s | 20.049 tok/s | 1.967x |
+
+Lab1、Lab2、Lab3、Lab5について、各node/kernelの組み合わせには
+36 cycle、各boot 2 runによる72測定が含まれる。
+
+別のD300搭載機Lab4はLinux 6.12.107固定referenceとして変更せずに
+測定を継続し、255回の測定をすべて正常完了した。平均は
+62.431 tok/s、run間の標準偏差は0.432 tok/sであった。
+
+副次的な結果として、Linux 6.12.107上のD500搭載Lab5では
+run-order依存が観測された。run 1は平均40.829 tok/s、run 2は
+38.036 tok/sで、run 1が7.34%高かった。この副次的現象の原因は
+まだ特定していない。
+
+原因となるkernel commitまたはsubsystemは現時点では特定していない。
+
+- [調査報告](docs/findings/kernel-vulkan-op-offload-20261003.ja.md)
+- [データセットと集計結果](results/kernel-ab/20261003/README.md)
+- [D300 kernel比較](figures/kernel-ab/20261003/d300-kernel-comparison.svg)
+- [D500 kernel比較](figures/kernel-ab/20261003/d500-kernel-comparison.svg)
+- [Lab4固定reference](figures/kernel-ab/20261003/lab4-fixed-reference.svg)
+
 ## リポジトリ構成（予定）
 
 本プロジェクトでは、実験データやドキュメントを以下の構成で

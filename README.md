@@ -111,6 +111,40 @@ Details:
 - [Thermal qualification methodology](docs/methodology/thermal-qualification.md)
 - [Fan control](docs/methodology/fan-control.md)
 
+### Kernel-dependent Vulkan op-offload performance
+
+A completed 36-cycle A/B study found a large and reproducible
+kernel-dependent performance difference on MacPro6,1 systems using AMD
+GFX6 GPUs with the llama.cpp Vulkan operation-offload pp512 path.
+
+The final 2026-10-03 dataset contains 576 A/B measurements.
+
+| GPU | Linux 6.12.107 | Linux 6.12.111 | 107 / 111 |
+|---|---:|---:|---:|
+| FirePro D300 / Pitcairn, Lab1-3 aggregate | 63.031 tok/s | 16.448 tok/s | 3.832x |
+| FirePro D500 / Tahiti, Lab5 | 39.433 tok/s | 20.049 tok/s | 1.967x |
+
+For Lab1, Lab2, Lab3, and Lab5, each node/kernel combination contains
+72 measurements from 36 cycles with two benchmark runs per boot.
+
+A separate D300 system, Lab4, remained fixed on Linux 6.12.107 and
+completed 255 successful reference measurements with a mean of
+62.431 tok/s and an across-run standard deviation of 0.432 tok/s.
+
+A secondary run-order effect was observed on Lab5 with the D500 under
+Linux 6.12.107: run 1 averaged 40.829 tok/s and run 2 averaged
+38.036 tok/s, a 7.34% difference. The cause of this secondary effect is
+not yet established.
+
+The exact responsible kernel commit or subsystem has not yet been
+identified.
+
+- [Investigation report](docs/findings/kernel-vulkan-op-offload-20261003.md)
+- [Dataset and aggregate results](results/kernel-ab/20261003/README.md)
+- [D300 kernel comparison](figures/kernel-ab/20261003/d300-kernel-comparison.svg)
+- [D500 kernel comparison](figures/kernel-ab/20261003/d500-kernel-comparison.svg)
+- [Lab4 fixed reference](figures/kernel-ab/20261003/lab4-fixed-reference.svg)
+
 ## Planned Repository Structure
 
 The project repository is planned to use the following structure:
