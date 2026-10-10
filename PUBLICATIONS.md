@@ -54,6 +54,32 @@ and adaptive fan control under the same sustained workload.
 
 ---
 
+## 2026-10-10 — Fleet kernel qualification study
+
+**MacPro6,1 fleet kernel qualification — K108 to K112**
+
+A follow-up publication preserving the previously unpublished five-node fleet/kernel
+qualification work from 2026-10-06 through 2026-10-10.
+
+Highlights:
+
+- K108 / K109 / K110 / K112 official fleet runs: 5/5 SUCCESS
+- stable K107–K110 pp512 reference region on D300 and D500 nodes
+- K110 PCI GPU temperature-asymmetry observation
+- K111 historical-dataset validation and archival provenance
+- identical K112 artifact deployment with preserved SHA-256 hashes
+- invalid first K109 attempt explicitly excluded as an automation error
+
+Publication:
+
+- [English](publications/2026-10-10-fleet-kernel-qualification/README.md)
+- [日本語](publications/2026-10-10-fleet-kernel-qualification/README.ja.md)
+
+This publication adds the previously unpublished fleet/kernel qualification record
+without modifying the earlier kernel/Vulkan or thermal-identification studies.
+
+---
+
 ## Publication policy
 
 Future research will be added as new dated publications.

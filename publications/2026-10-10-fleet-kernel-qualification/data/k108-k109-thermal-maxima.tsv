@@ -1,0 +1,11 @@
+kernel	node	te0_max_c	gpu_max_c	cpu_max_c
+K108	Lab1	78.8	75	79
+K108	Lab2	74.8	73	74
+K108	Lab3	78.5	76	79
+K108	Lab4	75.8	80	82
+K108	USB2	83.2	75	76
+K109	Lab1	79.2	66	68
+K109	Lab2	75.0	67	65
+K109	Lab3	78.2	69	69
+K109	Lab4	76.2	73	69
+K109	USB2	85.2	70	67

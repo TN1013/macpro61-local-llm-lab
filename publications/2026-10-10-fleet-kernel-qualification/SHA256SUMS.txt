@@ -1,0 +1,13 @@
+019f80e9eeacf7d144ad08f0f8816b1994ccae6d6fee7825f0935c062832fa02  ./PROVENANCE.md
+7a105cce2ecc7bf948bd3b6b24ec36adfa05402488630df74976237684bc6c0a  ./README.ja.md
+1201e379d487e6c5cc29950a620e27f8f74907f148f61a9a3cdebb08f851424b  ./README.md
+ab828aec1e5a2564bf6f27bd5e982fab142ee6257030102a948959bf5bceca07  ./WEEKLY_SUMMARY.ja.md
+035d7dbf9be76b74546f988525fda1763423ed1d0848254431ccd34d86b96e94  ./WEEKLY_SUMMARY.md
+a44013e2ebda1194122afe8a996c7f478532e56acadeefba9ac198564fd0c375  ./data/fleet-runs.tsv
+6207379f11de68a936093ea2b0d4882dc44d96feda5cc9fd9ac6ab5c88e7f5ec  ./data/k108-k109-thermal-maxima.tsv
+5d77a9e7813b2f8a241465ad419cb66ae392e2e103fadaeb07b2c31be6708e2d  ./data/k110-cycle-coverage.tsv
+3fcf098ada93bf234a610aa50293dc9d87791090a843e47f2caa7080a221f82e  ./data/k110-pci-gpu-temperature-difference.tsv
+d97b63617984d191198a598cd1b8cffe6523ad614c433981998001f071ae9523  ./data/k111-historical-validation.tsv
+16489bfeb48f879fad2a9e3a65f5794e56fb638da23d401f97a70447655ca144  ./data/k112-artifact-hashes.tsv
+b8a73aa6af862a15c194d443425fd57abacb3c3925fb1514d2e7a8aac21b8199  ./data/kernel-throughput-stability.tsv
+035a80e688f193a29280efc8046707390a192c1ce2a02a822073ab1980517e05  ./scripts/validate-publication.py

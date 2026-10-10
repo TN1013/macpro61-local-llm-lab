@@ -1,0 +1,6 @@
+node	paired_samples	mean_0600_minus_0200_c	median_0600_minus_0200_c	min_0600_minus_0200_c	max_0600_minus_0200_c	positive_samples
+Lab1	78	6.64	7.00	-1.00	7.00	77
+Lab2	75	5.64	6.00	-1.00	7.00	74
+Lab3	76	5.71	6.00	0.00	7.00	75
+Lab4	75	8.63	9.00	3.00	10.00	75
+USB2	70	4.57	5.00	0.00	6.00	69

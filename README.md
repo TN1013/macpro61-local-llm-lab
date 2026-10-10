@@ -145,6 +145,17 @@ identified.
 - [D500 kernel comparison](figures/kernel-ab/20261003/d500-kernel-comparison.svg)
 - [Lab4 fixed reference](figures/kernel-ab/20261003/lab4-fixed-reference.svg)
 
+### Fleet kernel qualification — K108 to K112
+
+A separate 2026-10-10 publication preserves the previously unpublished five-node
+fleet/kernel qualification series covering K108, K109, K110, K111 historical-data
+validation, and K112 reproducible artifact deployment.
+
+Highlights include 5/5 successful official fleet runs for K108/K109/K110/K112 and
+stable K107–K110 GPU pp512 reference performance on the tested D300 and D500 nodes.
+
+- [Fleet kernel qualification publication](publications/2026-10-10-fleet-kernel-qualification/README.md)
+
 ## Planned Repository Structure
 
 The project repository is planned to use the following structure:

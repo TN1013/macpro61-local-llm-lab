@@ -140,6 +140,18 @@ run-order依存が観測された。run 1は平均40.829 tok/s、run 2は
 - [D500 kernel比較](figures/kernel-ab/20261003/d500-kernel-comparison.svg)
 - [Lab4固定reference](figures/kernel-ab/20261003/lab4-fixed-reference.svg)
 
+### Fleet kernel qualification — K108 to K112
+
+2026-10-10の別publicationとして、これまで未発表だった5-node fleet / kernel
+qualification seriesを保存します。K108、K109、K110、K111 historical-data validation、
+およびK112の再現可能artifact配備を含みます。
+
+K108/K109/K110/K112の公式fleet runはすべて5/5 SUCCESSで、
+K107〜K110では試験したD300/D500 nodeのGPU pp512 reference performanceが
+狭い範囲に安定していました。
+
+- [Fleet kernel qualification publication](publications/2026-10-10-fleet-kernel-qualification/README.ja.md)
+
 ## リポジトリ構成（予定）
 
 本プロジェクトでは、実験データやドキュメントを以下の構成で
