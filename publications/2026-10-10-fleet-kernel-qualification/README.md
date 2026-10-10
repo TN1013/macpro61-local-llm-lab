@@ -1,5 +1,30 @@
 # MacPro6,1 Fleet Kernel Qualification — K108 to K112
 
+> **日本語で読まれる方へ:**
+> 完全な日本語版は [README.ja.md](README.ja.md) にあります。
+
+## 日本語概要
+
+このpublicationは、Mac Pro (Late 2013 / MacPro6,1) 5台を使用して実施した、
+Linux kernelおよびLocal LLMの長時間fleet検証結果をまとめたものです。
+
+K108、K109、K110、K112の公式fleet runでは、対象とした5台すべてが
+SUCCESSとなりました。
+
+また、K107〜K110におけるpp512 performanceの安定性、
+K108/K109の温度最大値、K110で観測した2基のAMD GPU間の温度差、
+K111 historical datasetの再検証、
+K112における同一artifact setの5台への配備について記録しています。
+
+より詳しい日本語本文は
+[README.ja.md](README.ja.md)
+を参照してください。
+
+---
+
+## English
+
+
 ## Status
 
 Completed publication record — 2026-10-10.
