@@ -1,5 +1,7 @@
 # MacPro6,1 Local LLM Lab — Publications and Research History
 
+[日本語版](PUBLICATIONS.ja.md)
+
 This file is an append-only index of research publications produced by
 the MacPro6,1 Local LLM Lab.
 
