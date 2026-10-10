@@ -1,0 +1,15 @@
+field	value
+source_dataset	kernel-test/results/20261003-011042
+k111_logs	288
+cycles	36
+repeats_per_cycle	2
+labels	Lab1;Lab2;Lab3;Lab5
+kernel	6.12.111+deb13-amd64
+llama_cpp_build	7ac59a6e3 (11207)
+combined_k107_k111_rows	576
+ssh_rc0_rows	576
+missing_pp512	0
+missing_tg1	0
+historical_archive	macpro-fleet-bench/archives/k111-historical-20261003/final-20261010-162130
+archive_manifest_sha256	a8e3443296bf60b4fb50056f07bb4bfd0eedc9f326b6960c4ec6657007361da7
+classification	historical archival evidence; not a five-node formal K111 soak

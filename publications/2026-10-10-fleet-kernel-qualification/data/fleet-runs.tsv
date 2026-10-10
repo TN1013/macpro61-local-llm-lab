@@ -1,0 +1,5 @@
+kernel	run_id	final_archive	cycle_semantics	lab1_cycle	lab2_cycle	lab3_cycle	lab4_cycle	usb2_cycle	success_nodes	deadline_nodes	thermal_waits	status_note
+K108	k108-to1300-retry-20261006-190829	final-20261007-153455	official_reported_final_cycle	71	68	69	67	63	5/5	not_separately_counted	0	official summary
+K109	k109-to1300-retry-20261007-162623	final-20261008-130717	official_reported_final_cycle	79	80	78	76	73	5/5	not_separately_counted	0	official retry; Lab1 c79-cpu and USB2 c73-nopo1 deadline-truncated
+K110	k110-to1300-20261008-170221	final-20261009-130832	highest_complete_cycle_before_deadline	77	74	75	74	69	5/5	5/5	not_established	SUCCESS and DEADLINE_REACHED markers present on all five nodes
+K112	k112-to1300-retry-20261009-162051	final-20261010-155301	official_final_cycle	42	41	42	41	48	5/5	5/5	not_established	verified official final archive

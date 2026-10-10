@@ -1,0 +1,4 @@
+scope	kernels	metric	observed_range_tok_s	missing_rc0_logs	note
+D300 fleet	K107-K110	gpu pp512 median	61.95-62.56	0 across 16 node/kernel sets	Lab1-Lab4
+USB2 D500	K107-K110	gpu pp512 median	51.47-51.55	0 across 4 node/kernel sets	USB2
+all compared sets	K107-K110	coverage	NA	0 across 20 node/kernel sets	complete RC0 coverage
