@@ -39,8 +39,6 @@ A follow-up study investigating thermal behavior, Apple SMC automatic
 fan response, fixed fan speeds, and dynamic fan-speed changes under
 simultaneous CPU + dual-GPU workload.
 
-Publication:
-
 - [English](publications/2026-10-10-thermal-identification/README.md)
 - [日本語](publications/2026-10-10-thermal-identification/README.ja.md)
 
@@ -70,10 +68,24 @@ Highlights:
 - identical K112 artifact deployment with preserved SHA-256 hashes
 - invalid first K109 attempt explicitly excluded as an automation error
 
-Publication:
+### 日本語概要
 
-- [English](publications/2026-10-10-fleet-kernel-qualification/README.md)
-- [日本語](publications/2026-10-10-fleet-kernel-qualification/README.ja.md)
+2026年10月6日から10月10日にかけて実施した、
+Mac Pro (Late 2013 / MacPro6,1) 5台による
+Linux kernelおよびLocal LLMの長時間fleet検証をまとめたpublicationです。
+
+主な内容は以下の通りです。
+
+- K108 / K109 / K110 / K112の公式fleet runは5台すべてSUCCESS
+- K107〜K110ではpp512 performanceが安定
+- K108 / K109の温度最大値を記録
+- K110では2基のAMD GPU間の温度差を観測
+- K111 historical datasetを再検証
+- K112では同一artifact setを5台へ配備してqualificationを実施
+
+日本語の詳細本文は、以下を参照してください。
+
+- [日本語版](publications/2026-10-10-fleet-kernel-qualification/README.ja.md)
 
 This publication adds the previously unpublished fleet/kernel qualification record
 without modifying the earlier kernel/Vulkan or thermal-identification studies.
