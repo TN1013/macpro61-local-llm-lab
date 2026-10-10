@@ -39,6 +39,8 @@ A follow-up study investigating thermal behavior, Apple SMC automatic
 fan response, fixed fan speeds, and dynamic fan-speed changes under
 simultaneous CPU + dual-GPU workload.
 
+Publication:
+
 - [English](publications/2026-10-10-thermal-identification/README.md)
 - [日本語](publications/2026-10-10-thermal-identification/README.ja.md)
 
@@ -86,6 +88,11 @@ Linux kernelおよびLocal LLMの長時間fleet検証をまとめたpublication�
 日本語の詳細本文は、以下を参照してください。
 
 - [日本語版](publications/2026-10-10-fleet-kernel-qualification/README.ja.md)
+
+Publication:
+
+- [English](publications/2026-10-10-fleet-kernel-qualification/README.md)
+- [日本語](publications/2026-10-10-fleet-kernel-qualification/README.ja.md)
 
 This publication adds the previously unpublished fleet/kernel qualification record
 without modifying the earlier kernel/Vulkan or thermal-identification studies.

@@ -1,6 +1,6 @@
 # MacPro6,1 Fleet Kernel Qualification — K108 to K112
 
-> **日本語で読まれる方へ:**  
+> **日本語で読まれる方へ:**
 > 完全な日本語版は [README.ja.md](README.ja.md) にあります。
 
 ## 日本語概要
