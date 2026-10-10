@@ -1,0 +1,8 @@
+3b38a83b69dac45b545b5757d3b30a2202c20e8dd98747f35d65022346288bcb  ./PROVENANCE.md
+dec737bccc3a52d529eb8aa26599eb8fd3e06b633fb2c19cb31d7d90581e3720  ./README.ja.md
+d92e23893637b03252e11d70c482a0bd91aebc25cb81f2a0ee117437dafc730b  ./README.md
+9ed35f2babb8afbb94853eb6b47f3746d81e7ecd2a2257bba0ce1fccc2a7d474  ./data/ambient-smc-summary.tsv
+bb483b5128827032ec750996856e30e398c3b75a05e3d3ea2f20b039751a6580  ./data/dynamic-segments.tsv
+d47266248af2024302bea783929d58c2108bd28b47d2ecae96d9d03cd1c104a6  ./data/phase-summary.tsv
+b2acf0f9c261c1371e01d8822cf69a171645e87bdd8021d8b73c5c97f8ed9910  ./figures/lab7-fixed-rpm-temperature.svg
+051cfc5fe4b50b7cf8f380d50879ef602f67cf1e5748d803351d7cd5527d4d77  ./scripts/analyze-thermal-20261010.py

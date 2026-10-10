@@ -161,3 +161,14 @@ results/             Processed benchmark and qualification results
 scripts/             Installation, measurement, and automation scripts
 figures/             Diagrams, graphs, and figures
 paper/               Research papers and technical report material
+
+## Research publications
+
+Research results are preserved as dated publications so that the
+development of the project can be followed historically.
+
+- [Publications and Research History](PUBLICATIONS.md)
+
+Published studies are normally preserved rather than silently rewritten.
+Later results, corrections, and reinterpretations are added as new
+follow-up publications.
