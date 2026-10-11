@@ -101,6 +101,33 @@ without modifying the earlier kernel/Vulkan or thermal-identification studies.
 
 ---
 
+## 2026-10-11 — Linux 6.12.110 → 6.12.111 regression-boundary study
+
+**MacPro6,1 Linux 6.12.110 → 6.12.111 pp512 regression boundary**
+
+A controlled five-node K108–K112 follow-up study localizing the
+observed Vulkan operation-offload pp512 performance regression boundary.
+
+Highlights:
+
+- D300 fleet performance remains near 63 tok/s through Linux 6.12.110
+- Linux 6.12.111 drops to approximately 16.45 tok/s
+- approximately 74% throughput reduction across the K110 → K111 boundary
+- Linux 6.12.112 remains on the regressed side
+- both Vulkan devices reproduce the transition
+- D500 also shows a lower-performance state beginning at K111
+- exact responsible kernel commit/subsystem remains unidentified
+
+Publication:
+
+- [English](publications/2026-10-11-kernel-regression-boundary/README.md)
+- [日本語](publications/2026-10-11-kernel-regression-boundary/README.ja.md)
+
+This is a new follow-up publication. Earlier kernel/Vulkan, thermal,
+and fleet-qualification publications remain unchanged.
+
+---
+
 ## Publication policy
 
 Future research will be added as new dated publications.

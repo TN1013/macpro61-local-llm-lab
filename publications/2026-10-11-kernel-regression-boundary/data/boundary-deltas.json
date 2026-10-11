@@ -1,0 +1,28 @@
+{
+  "k110_to_k111": {
+    "Vulkan0": {
+      "from_tps": 62.9525,
+      "to_tps": 16.475,
+      "percent_change": -73.829474603868,
+      "slowdown_ratio": 3.8210925644916536
+    },
+    "Vulkan1": {
+      "from_tps": 62.8875,
+      "to_tps": 16.4225,
+      "percent_change": -73.88590737427947,
+      "slowdown_ratio": 3.8293499771654744
+    }
+  },
+  "k111_to_k112": {
+    "Vulkan0": {
+      "from_tps": 16.475,
+      "to_tps": 16.482499999999998,
+      "percent_change": 0.045523520485568625
+    },
+    "Vulkan1": {
+      "from_tps": 16.4225,
+      "to_tps": 16.427500000000002,
+      "percent_change": 0.030446034404030264
+    }
+  }
+}

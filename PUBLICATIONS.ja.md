@@ -109,6 +109,34 @@ Publication：
 
 ---
 
+## 2026-10-11 — Linux 6.12.110 → 6.12.111 regression-boundary study
+
+**MacPro6,1 Linux 6.12.110 → 6.12.111 pp512 regression boundary**
+
+K108〜K112を5台のMacPro6,1で同一条件比較し、
+Vulkan operation-offload pp512のperformance regression境界を
+局所化したfollow-up studyです。
+
+主な結果：
+
+- D300 fleetではLinux 6.12.110まで約63 tok/sを維持
+- Linux 6.12.111で約16.45 tok/sへ低下
+- K110 → K111で約74%のthroughput低下
+- Linux 6.12.112でも回帰側性能が継続
+- 両Vulkan deviceで同じ境界を再現
+- D500でもK111から低性能状態を確認
+- 原因となる正確なkernel commit/subsystemは未特定
+
+Publication：
+
+- [English](publications/2026-10-11-kernel-regression-boundary/README.md)
+- [日本語](publications/2026-10-11-kernel-regression-boundary/README.ja.md)
+
+これは新しいfollow-up publicationです。
+既存のkernel/Vulkan研究、thermal研究、fleet qualification研究は変更しません。
+
+---
+
 ## Publication policy — 公開方針
 
 今後の研究成果は、日付を明示した新しいpublicationとして追加していきます。
