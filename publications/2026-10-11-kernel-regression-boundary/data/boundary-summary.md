@@ -23,4 +23,3 @@
 ## Interpretation
 
 Under the controlled cold-test conditions used in this campaign, the pp512 regression boundary lies between Linux 6.12.110 and 6.12.111. Performance remains on the regressed side in 6.12.112.
-
