@@ -1,0 +1,92 @@
+[
+  {
+    "kernel": 108,
+    "device": "Vulkan0",
+    "n": 4,
+    "mean_pp512_tps": 63.2875,
+    "min_pp512_tps": 62.71,
+    "max_pp512_tps": 63.72,
+    "stdev_pp512_tps": 0.43820657229210863
+  },
+  {
+    "kernel": 108,
+    "device": "Vulkan1",
+    "n": 4,
+    "mean_pp512_tps": 62.845,
+    "min_pp512_tps": 62.68,
+    "max_pp512_tps": 63.08,
+    "stdev_pp512_tps": 0.17136705245369158
+  },
+  {
+    "kernel": 109,
+    "device": "Vulkan0",
+    "n": 4,
+    "mean_pp512_tps": 63.137499999999996,
+    "min_pp512_tps": 62.9,
+    "max_pp512_tps": 63.48,
+    "stdev_pp512_tps": 0.24608602831801127
+  },
+  {
+    "kernel": 109,
+    "device": "Vulkan1",
+    "n": 4,
+    "mean_pp512_tps": 62.8275,
+    "min_pp512_tps": 62.37,
+    "max_pp512_tps": 63.28,
+    "stdev_pp512_tps": 0.44954606734645924
+  },
+  {
+    "kernel": 110,
+    "device": "Vulkan0",
+    "n": 4,
+    "mean_pp512_tps": 62.9525,
+    "min_pp512_tps": 62.65,
+    "max_pp512_tps": 63.46,
+    "stdev_pp512_tps": 0.37196550019233426
+  },
+  {
+    "kernel": 110,
+    "device": "Vulkan1",
+    "n": 4,
+    "mean_pp512_tps": 62.8875,
+    "min_pp512_tps": 62.85,
+    "max_pp512_tps": 62.95,
+    "stdev_pp512_tps": 0.045000000000001046
+  },
+  {
+    "kernel": 111,
+    "device": "Vulkan0",
+    "n": 4,
+    "mean_pp512_tps": 16.475,
+    "min_pp512_tps": 16.45,
+    "max_pp512_tps": 16.49,
+    "stdev_pp512_tps": 0.017320508075688745
+  },
+  {
+    "kernel": 111,
+    "device": "Vulkan1",
+    "n": 4,
+    "mean_pp512_tps": 16.4225,
+    "min_pp512_tps": 16.41,
+    "max_pp512_tps": 16.43,
+    "stdev_pp512_tps": 0.009574271077563022
+  },
+  {
+    "kernel": 112,
+    "device": "Vulkan0",
+    "n": 4,
+    "mean_pp512_tps": 16.482499999999998,
+    "min_pp512_tps": 16.45,
+    "max_pp512_tps": 16.5,
+    "stdev_pp512_tps": 0.022173557826083445
+  },
+  {
+    "kernel": 112,
+    "device": "Vulkan1",
+    "n": 4,
+    "mean_pp512_tps": 16.427500000000002,
+    "min_pp512_tps": 16.42,
+    "max_pp512_tps": 16.44,
+    "stdev_pp512_tps": 0.009574271077563022
+  }
+]
