@@ -1,0 +1,103 @@
+10月 12 01:40:58 macmini-lab3 campaign-loop.sh[1877789]: ===== CURRENT BISECT CANDIDATE =====
+10月 12 01:40:58 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=d05e705471a08d07aed2c3182ebc36adea39378a
+10月 12 01:40:58 macmini-lab3 campaign-loop.sh[1877789]: subject=vdpa/ifcvf: handle dev_set_name() failure in ifcvf_vdpa_dev_add()
+10月 12 01:40:59 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=d05e705471a08d07aed2c3182ebc36adea39378a
+10月 12 01:55:22 macmini-lab3 campaign-loop.sh[1877789]: FINISHED=2026-10-12T01:55:22+09:00
+10月 12 01:55:22 macmini-lab3 campaign-loop.sh[1877789]: ===== CLASSIFICATION =====
+10月 12 01:55:22 macmini-lab3 campaign-loop.sh[1877789]: Vulkan0_pp512=16.4800
+10月 12 01:55:22 macmini-lab3 campaign-loop.sh[1877789]: Vulkan1_pp512=16.4300
+10月 12 01:55:22 macmini-lab3 campaign-loop.sh[1877789]: VERDICT=bad
+10月 12 01:55:25 macmini-lab3 campaign-loop.sh[1877789]: ===== GIT BISECT bad =====
+10月 12 01:55:28 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=47f13cbbac33e1b6f24d7973544b62f83425d10b
+10月 12 01:55:28 macmini-lab3 campaign-loop.sh[1877789]: ===== CURRENT BISECT CANDIDATE =====
+10月 12 01:55:29 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=47f13cbbac33e1b6f24d7973544b62f83425d10b
+10月 12 01:55:29 macmini-lab3 campaign-loop.sh[1877789]: subject=usb: gadget: aspeed_udc: avoid past-the-end iterator in dequeue
+10月 12 02:34:21 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=47f13cbbac33e1b6f24d7973544b62f83425d10b
+10月 12 02:44:16 macmini-lab3 campaign-loop.sh[1877789]: FINISHED=2026-10-12T02:44:16+09:00
+10月 12 02:44:17 macmini-lab3 campaign-loop.sh[1877789]: ===== CLASSIFICATION =====
+10月 12 02:44:17 macmini-lab3 campaign-loop.sh[1877789]: Vulkan0_pp512=63.0400
+10月 12 02:44:17 macmini-lab3 campaign-loop.sh[1877789]: Vulkan1_pp512=62.7800
+10月 12 02:44:17 macmini-lab3 campaign-loop.sh[1877789]: VERDICT=good
+10月 12 02:44:20 macmini-lab3 campaign-loop.sh[1877789]: ===== GIT BISECT good =====
+10月 12 02:44:23 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=477353db343663d5502ca442c6de785d2f23f273
+10月 12 02:44:23 macmini-lab3 campaign-loop.sh[1877789]: ===== CURRENT BISECT CANDIDATE =====
+10月 12 02:44:23 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=477353db343663d5502ca442c6de785d2f23f273
+10月 12 02:44:23 macmini-lab3 campaign-loop.sh[1877789]: subject=net: qrtr: fix node refcount leak on ctrl packet alloc failure
+10月 12 03:23:15 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=477353db343663d5502ca442c6de785d2f23f273
+10月 12 03:37:39 macmini-lab3 campaign-loop.sh[1877789]: FINISHED=2026-10-12T03:37:39+09:00
+10月 12 03:37:40 macmini-lab3 campaign-loop.sh[1877789]: ===== CLASSIFICATION =====
+10月 12 03:37:40 macmini-lab3 campaign-loop.sh[1877789]: Vulkan0_pp512=16.4800
+10月 12 03:37:40 macmini-lab3 campaign-loop.sh[1877789]: Vulkan1_pp512=16.4500
+10月 12 03:37:40 macmini-lab3 campaign-loop.sh[1877789]: VERDICT=bad
+10月 12 03:37:43 macmini-lab3 campaign-loop.sh[1877789]: ===== GIT BISECT bad =====
+10月 12 03:37:45 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=250800658bf3db32e7accc615b0a134c30fba203
+10月 12 03:37:46 macmini-lab3 campaign-loop.sh[1877789]: ===== CURRENT BISECT CANDIDATE =====
+10月 12 03:37:46 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=250800658bf3db32e7accc615b0a134c30fba203
+10月 12 03:37:46 macmini-lab3 campaign-loop.sh[1877789]: subject=ACPICA: Add package limit checks in parser functions
+10月 12 04:16:38 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=250800658bf3db32e7accc615b0a134c30fba203
+10月 12 04:31:02 macmini-lab3 campaign-loop.sh[1877789]: FINISHED=2026-10-12T04:31:02+09:00
+10月 12 04:31:02 macmini-lab3 campaign-loop.sh[1877789]: ===== CLASSIFICATION =====
+10月 12 04:31:02 macmini-lab3 campaign-loop.sh[1877789]: Vulkan0_pp512=16.4700
+10月 12 04:31:02 macmini-lab3 campaign-loop.sh[1877789]: Vulkan1_pp512=16.4200
+10月 12 04:31:02 macmini-lab3 campaign-loop.sh[1877789]: VERDICT=bad
+10月 12 04:31:05 macmini-lab3 campaign-loop.sh[1877789]: ===== GIT BISECT bad =====
+10月 12 04:31:07 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=722e817c536524a9029488aab13a3c7a16528547
+10月 12 04:31:08 macmini-lab3 campaign-loop.sh[1877789]: ===== CURRENT BISECT CANDIDATE =====
+10月 12 04:31:08 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=722e817c536524a9029488aab13a3c7a16528547
+10月 12 04:31:08 macmini-lab3 campaign-loop.sh[1877789]: subject=iio: adc: qcom-spmi-iadc: balance enable_irq_wake() on driver unbind
+10月 12 05:10:00 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=722e817c536524a9029488aab13a3c7a16528547
+10月 12 05:19:43 macmini-lab3 campaign-loop.sh[1877789]: FINISHED=2026-10-12T05:19:43+09:00
+10月 12 05:19:43 macmini-lab3 campaign-loop.sh[1877789]: ===== CLASSIFICATION =====
+10月 12 05:19:43 macmini-lab3 campaign-loop.sh[1877789]: Vulkan0_pp512=63.7100
+10月 12 05:19:43 macmini-lab3 campaign-loop.sh[1877789]: Vulkan1_pp512=62.5100
+10月 12 05:19:43 macmini-lab3 campaign-loop.sh[1877789]: VERDICT=good
+10月 12 05:19:46 macmini-lab3 campaign-loop.sh[1877789]: ===== GIT BISECT good =====
+10月 12 05:19:48 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=016ed6cc7c144bcc535ae9ae38f56b33aa22225f
+10月 12 05:19:49 macmini-lab3 campaign-loop.sh[1877789]: ===== CURRENT BISECT CANDIDATE =====
+10月 12 05:19:49 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=016ed6cc7c144bcc535ae9ae38f56b33aa22225f
+10月 12 05:19:49 macmini-lab3 campaign-loop.sh[1877789]: subject=drm/amd/display: Initialize dsc_caps to 0
+10月 12 05:58:41 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=016ed6cc7c144bcc535ae9ae38f56b33aa22225f
+10月 12 06:13:05 macmini-lab3 campaign-loop.sh[1877789]: FINISHED=2026-10-12T06:13:05+09:00
+10月 12 06:13:06 macmini-lab3 campaign-loop.sh[1877789]: ===== CLASSIFICATION =====
+10月 12 06:13:06 macmini-lab3 campaign-loop.sh[1877789]: Vulkan0_pp512=16.4500
+10月 12 06:13:06 macmini-lab3 campaign-loop.sh[1877789]: Vulkan1_pp512=16.4100
+10月 12 06:13:06 macmini-lab3 campaign-loop.sh[1877789]: VERDICT=bad
+10月 12 06:13:09 macmini-lab3 campaign-loop.sh[1877789]: ===== GIT BISECT bad =====
+10月 12 06:13:11 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=bff7b87dfa28a1502c18d0c6f1fadda5162fa854
+10月 12 06:13:12 macmini-lab3 campaign-loop.sh[1877789]: ===== CURRENT BISECT CANDIDATE =====
+10月 12 06:13:12 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=bff7b87dfa28a1502c18d0c6f1fadda5162fa854
+10月 12 06:13:12 macmini-lab3 campaign-loop.sh[1877789]: subject=ipv6: addrconf: fix temp address generation after prefix deprecation
+10月 12 06:52:04 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=bff7b87dfa28a1502c18d0c6f1fadda5162fa854
+10月 12 07:01:50 macmini-lab3 campaign-loop.sh[1877789]: FINISHED=2026-10-12T07:01:50+09:00
+10月 12 07:01:50 macmini-lab3 campaign-loop.sh[1877789]: ===== CLASSIFICATION =====
+10月 12 07:01:50 macmini-lab3 campaign-loop.sh[1877789]: Vulkan0_pp512=63.2300
+10月 12 07:01:50 macmini-lab3 campaign-loop.sh[1877789]: Vulkan1_pp512=63.0500
+10月 12 07:01:50 macmini-lab3 campaign-loop.sh[1877789]: VERDICT=good
+10月 12 07:01:53 macmini-lab3 campaign-loop.sh[1877789]: ===== GIT BISECT good =====
+10月 12 07:01:55 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=16052dbffa6647df6f40a4567a3a423ff53676d8
+10月 12 07:01:56 macmini-lab3 campaign-loop.sh[1877789]: ===== CURRENT BISECT CANDIDATE =====
+10月 12 07:01:56 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=16052dbffa6647df6f40a4567a3a423ff53676d8
+10月 12 07:01:56 macmini-lab3 campaign-loop.sh[1877789]: subject=drm/dp: Add DSC virtual DPCD quirk for Realtek MST branch device
+10月 12 07:40:48 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=16052dbffa6647df6f40a4567a3a423ff53676d8
+10月 12 07:50:36 macmini-lab3 campaign-loop.sh[1877789]: FINISHED=2026-10-12T07:50:36+09:00
+10月 12 07:50:36 macmini-lab3 campaign-loop.sh[1877789]: ===== CLASSIFICATION =====
+10月 12 07:50:36 macmini-lab3 campaign-loop.sh[1877789]: Vulkan0_pp512=63.1800
+10月 12 07:50:36 macmini-lab3 campaign-loop.sh[1877789]: Vulkan1_pp512=63.0700
+10月 12 07:50:36 macmini-lab3 campaign-loop.sh[1877789]: VERDICT=good
+10月 12 07:50:39 macmini-lab3 campaign-loop.sh[1877789]: ===== GIT BISECT good =====
+10月 12 07:50:41 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=0af7a28c53f1dab35d74f48966da5651dbde7492
+10月 12 07:50:42 macmini-lab3 campaign-loop.sh[1877789]: ===== CURRENT BISECT CANDIDATE =====
+10月 12 07:50:42 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=0af7a28c53f1dab35d74f48966da5651dbde7492
+10月 12 07:50:42 macmini-lab3 campaign-loop.sh[1877789]: subject=drm/amd/pm/si: Fix updating clock limits from power states
+10月 12 08:29:34 macmini-lab3 campaign-loop.sh[1877789]: COMMIT=0af7a28c53f1dab35d74f48966da5651dbde7492
+10月 12 08:43:48 macmini-lab3 campaign-loop.sh[1877789]: FINISHED=2026-10-12T08:43:48+09:00
+10月 12 08:43:48 macmini-lab3 campaign-loop.sh[1877789]: ===== CLASSIFICATION =====
+10月 12 08:43:48 macmini-lab3 campaign-loop.sh[1877789]: Vulkan0_pp512=16.4500
+10月 12 08:43:48 macmini-lab3 campaign-loop.sh[1877789]: Vulkan1_pp512=16.4800
+10月 12 08:43:48 macmini-lab3 campaign-loop.sh[1877789]: VERDICT=bad
+10月 12 08:43:51 macmini-lab3 campaign-loop.sh[1877789]: ===== GIT BISECT bad =====
+10月 12 08:43:51 macmini-lab3 campaign-loop.sh[1877789]: 0af7a28c53f1dab35d74f48966da5651dbde7492 is the first bad commit
+10月 12 08:43:51 macmini-lab3 campaign-loop.sh[1877789]: ===== FIRST BAD COMMIT FOUND =====
+10月 12 08:43:52 macmini-lab3 campaign-loop.sh[1877789]: subject=drm/amd/pm/si: Fix updating clock limits from power states
+10月 12 08:43:52 macmini-lab3 campaign-loop.sh[1877789]: CAMPAIGN_PASS_BISECT_COMPLETE
+10月 12 08:43:52 macmini-lab3 campaign-loop.sh[1877789]: FINISHED=2026-10-12T08:43:52+09:00

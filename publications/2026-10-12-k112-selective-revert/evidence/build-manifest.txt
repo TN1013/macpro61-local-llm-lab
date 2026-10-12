@@ -1,0 +1,6 @@
+kernel_release=6.12.112-revert-0af7
+revert_commit=2ca44dfc8f8bb482311796ab9d295d7219a1874e
+base_commit=7aba70ab2e8d8ab3cd45abcaa15e1119a00dc42a
+config_sha256=a4c7bb87dd9c51d02875ec2bc6588d63a021694ce1afef296a1c20cc965009e7
+853b37824e6d3a8df19ec77f6cfc157bae54b4b121eb3ac66d500b8be9b4ca7e  /home/takuya/mp61-kernel-bisect/builds/linux-image-6.12.112-revert-0af7_6.12.112-1+mp61.revert0af7_amd64.deb
+f66a9bd9c68ce48d162348394060f7e1f22a25fb8dc15ee8d12e178c0638d706  /home/takuya/mp61-kernel-bisect/builds/linux-headers-6.12.112-revert-0af7_6.12.112-1+mp61.revert0af7_amd64.deb

@@ -155,6 +155,8 @@ Highlights include 5/5 successful official fleet runs for K108/K109/K110/K112 an
 stable K107–K110 GPU pp512 reference performance on the tested D300 and D500 nodes.
 
 - [Fleet kernel qualification publication](publications/2026-10-10-fleet-kernel-qualification/README.md)
+- [Kernel 6.12.110 → 6.12.111 regression-boundary publication](publications/2026-10-11-kernel-regression-boundary/README.md)
+- [Kernel 6.12.112 selective-revert validation](publications/2026-10-12-k112-selective-revert/README.md)
 
 ## Planned Repository Structure
 

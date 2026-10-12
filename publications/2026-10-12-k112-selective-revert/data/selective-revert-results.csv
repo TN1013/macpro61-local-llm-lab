@@ -1,0 +1,7 @@
+scope,system,gpu,kernel_or_commit,vulkan0_pp512,vulkan1_pp512,status
+D300 fleet mean,Lab1+Lab2+Lab3+Legacy18,FirePro D300 x2,6.12.110-labtest,62.9525,62.8875,high-performance
+D300 fleet mean,Lab1+Lab2+Lab3+Legacy18,FirePro D300 x2,6.12.112-labtest,16.4825,16.4275,regressed
+direct bisect boundary,Lab1,FirePro D300 x2,16052dbffa6647df6f40a4567a3a423ff53676d8,63.18,63.07,GOOD
+direct bisect boundary,Lab1,FirePro D300 x2,0af7a28c53f1dab35d74f48966da5651dbde7492,16.45,16.48,BAD
+selective revert,Lab1,FirePro D300 x2,6.12.112-revert-0af7,63.27,62.64,PASS_COLD
+release-level context,USB2,FirePro D500 x2,6.12.112-labtest,20.24,20.07,regressed-side-observation

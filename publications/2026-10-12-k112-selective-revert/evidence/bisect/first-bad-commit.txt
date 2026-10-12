@@ -1,0 +1,36 @@
+commit 0af7a28c53f1dab35d74f48966da5651dbde7492
+Author: Jeremy Klarenbeek <jeremy.klarenbeek99@gmail.com>
+Date:   Tue May 19 10:41:57 2026 +0200
+
+    drm/amd/pm/si: Fix updating clock limits from power states
+    
+    [ Upstream commit e6c5d36756e7d4d260e2365fc4d01226f1973152 ]
+    
+    VBIOS can contain conflicting values between:
+    - the maximum allowed clocks and voltages on AC or DC
+    - the clocks and voltages in power states on AC or DC
+    
+    Update maximum clock (and voltage) limits for both AC/DC
+    and take the highest value from the VBIOS limits and
+    the performance/battery power states. Previously this
+    was only done for AC, but is also needed for DC.
+    
+    This commit fixes the behaviour on some laptop GPUs,
+    where the VBIOS limit was set to the lowest possible
+    clock frequency, so the GPU was stuck on the lowest
+    possible power level on battery.
+    
+    Some affected GPUs are:
+    FirePro W4170M (Dell Precision M2800)
+    Radeon HD 8790M (Dell Latitude E6540)
+    and possibly other laptop GPUs.
+    
+    Reviewed-by: Alex Deucher <alexander.deucher@amd.com>
+    Co-developed-by: Timur Kristóf <timur.kristof@gmail.com>
+    Signed-off-by: Timur Kristóf <timur.kristof@gmail.com>
+    Signed-off-by: Jeremy Klarenbeek <jeremy.klarenbeek99@gmail.com>
+    Signed-off-by: Alex Deucher <alexander.deucher@amd.com>
+    Signed-off-by: Sasha Levin <sashal@kernel.org>
+
+ drivers/gpu/drm/amd/pm/legacy-dpm/si_dpm.c | 29 ++++++++++++++++++++++++-----
+ 1 file changed, 24 insertions(+), 5 deletions(-)
