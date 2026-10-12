@@ -151,6 +151,8 @@ K107〜K110では試験したD300/D500 nodeのGPU pp512 reference performanceが
 狭い範囲に安定していました。
 
 - [Fleet kernel qualification publication](publications/2026-10-10-fleet-kernel-qualification/README.ja.md)
+- [Kernel 6.12.110 → 6.12.111 regression境界研究](publications/2026-10-11-kernel-regression-boundary/README.ja.md)
+- [Kernel 6.12.112 selective-revert検証](publications/2026-10-12-k112-selective-revert/README.ja.md)
 
 ## リポジトリ構成（予定）
 

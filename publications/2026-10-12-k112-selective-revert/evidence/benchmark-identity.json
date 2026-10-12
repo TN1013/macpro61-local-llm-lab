@@ -1,0 +1,68 @@
+{
+  "canonical_benchmark": {
+    "arguments": [
+      "-ngl",
+      "0",
+      "-lzm",
+      "off",
+      "-t",
+      "4",
+      "-n",
+      "1",
+      "-nopo",
+      "0",
+      "-nkvo",
+      "1",
+      "-p",
+      "512",
+      "-r",
+      "5",
+      "-b",
+      "512",
+      "-ub",
+      "512"
+    ],
+    "devices": [
+      "Vulkan0",
+      "Vulkan1"
+    ]
+  },
+  "embedded_llama_commit": "7ac59a6e3",
+  "git_commit_optional": "7ac59a6e3ad851cd41af00f678effab0598ba9a8",
+  "kernel_cmdline": "BOOT_IMAGE=/boot/vmlinuz-6.12.112-revert-0af7 root=UUID=7953a039-fb3b-499c-9662-086987578fb1 ro quiet radeon.si_support=0 amdgpu.si_support=1",
+  "libraries_sha256": {
+    "libggml": "40bab29fdfa5ba3372df29dabe6fd2a1b296e3a5797abb0b79623ff3b2e141f3",
+    "libggml_base": "a2799d96f6d3f91e4f60637a8c916dbd5a845136086a06b6883df1b0219f96eb",
+    "libggml_cpu": "5b32a497e45f18ee3c60eab38c0a43cbd0007b5cc8d530e963c148bb106590d3",
+    "libggml_vulkan": "18f9b9c161107fb1d720bc2a0bbb5690c2a182837b6ced646af76d73491cefe4",
+    "libllama": "ab3baf010aedd727ff760052d895245a98fe910d3cc5d70171a84b34d80a29ad",
+    "libllama_bench_impl": "c68f704c5f624ed8abacd3997e7930f7d8c756694c82e2b2eec319173ae193ec",
+    "libllama_common": "bd6ae1c8b0eef18964706b1339aa8a8a4325f4a678f1ea632dd76a384eb72f79"
+  },
+  "llama_bench_sha256": "2735454274bb661268ef9ef8c441f932b59ff6fa548b11c4ffd87ca9d0cb6ed1",
+  "llama_version_output": "ggml_vulkan: Found 2 Vulkan devices:\nggml_vulkan: 0 = AMD Radeon R9 200 Series (RADV PITCAIRN) (radv) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 32768 | int dot: 0 | matrix cores: none\nggml_vulkan: 1 = AMD Radeon R9 200 Series (RADV PITCAIRN) (radv) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 32768 | int dot: 0 | matrix cores: none\nversion: 0.5.0-dev (build 11207, commit 7ac59a6e3)\nbuilt with GNU 14.2.0 for Linux x86_64\n",
+  "objective": {
+    "comparison": "Measure identical canonical cold Vulkan0/Vulkan1 Qwen3-8B performance on kernels 6.12.108 through 6.12.112.",
+    "external_baseline": "K107 is taken from immutable v1.2.2 campaign campaign-v122-20261011-185948.",
+    "hot_phase": false,
+    "primary": "Identify the Linux 6.12 kernel release boundary at which MacPro6,1 LLM/Vulkan pp512 performance changes.",
+    "stress_phase": false,
+    "study": "kernel-boundary-cold-only-v1.3.1",
+    "thermal": "Retain production-v1 fan control and thermal abort protection without sustained dual-GPU endurance load."
+  },
+  "performance_model": "/home/takuya/models/benchmark/qwen3-8b/Qwen3-8B-Q4_K_M.gguf",
+  "performance_model_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+  "stress_benchmark": {
+    "base_duration_sec": 1200,
+    "devices": [
+      "Vulkan0",
+      "Vulkan1"
+    ],
+    "extension_sec": 600,
+    "extension_threshold_c_per_min": 0.5,
+    "ngl": 24,
+    "simultaneous": true
+  },
+  "stress_model": "/home/takuya/models/benchmark/Qwen3-4B-Q4_K_M.gguf",
+  "stress_model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+}
